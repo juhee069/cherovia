@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f6d8d6">
+<title>Cherovia — Digital Studio</title>
+<style>
+:root{
+ --brown:#604734; --cream:#fcf7d9; --blush:#f6d8d6; --pink:#f0c5d4;
+ --paper:#fffdf5; --line:#ead8cf; --muted:#7b675b;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--brown);font-family:Arial,Helvetica,sans-serif}
+header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 7%;border-bottom:1px solid var(--line);background:#fffdf5}
+.brand{font-family:Georgia,'Times New Roman',serif;font-size:clamp(22px,3vw,30px);letter-spacing:.2px;color:var(--brown)}
+.brand small{display:block;font:10px Arial,sans-serif;letter-spacing:4px;text-transform:uppercase;margin-top:5px}
+nav{display:flex;gap:20px;flex-wrap:wrap}
+nav a{font-size:13px;color:var(--brown);text-decoration:none}
+nav a:hover{text-decoration:underline}
+.hero{padding:76px 7% 70px;background:var(--blush);position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;width:230px;height:230px;border:1px solid rgba(96,71,52,.18);border-radius:50%;right:-65px;top:-75px}
+.eyebrow{font-size:11px;letter-spacing:3px;text-transform:uppercase;font-weight:700}
+h1{font:normal clamp(42px,7.5vw,78px)/1.02 Georgia,'Times New Roman',serif;max-width:800px;margin:20px 0}
+.hero p{font-size:16px;line-height:1.8;max-width:590px;color:#6e5849}
+.btn{display:inline-block;background:var(--brown);color:white;text-decoration:none;border-radius:3px;padding:14px 20px;margin-top:14px;font-size:13px;letter-spacing:.4px}
+.btn:hover{opacity:.88}
+section{padding:62px 7%}
+.section-title{font:normal clamp(30px,4vw,42px) Georgia,'Times New Roman',serif;margin:12px 0}
+.sub{color:var(--muted);line-height:1.75;max-width:660px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:28px}
+.card{padding:25px 23px;background:#fff;border:1px solid var(--line);min-height:220px}
+.icon{font-size:29px}
+.card h3{font:normal 23px Georgia,'Times New Roman',serif;margin:15px 0 9px}
+.card p{font-size:14px;line-height:1.75;color:var(--muted)}
+.band{background:var(--cream)}
+.steps .card{background:rgba(255,255,255,.7)}
+.contact{background:var(--brown);color:#fff}
+.contact .sub{color:#f3e6dc}
+.contact .btn{background:var(--pink);color:var(--brown)}
+.note{font-size:12px;opacity:.8;margin-top:18px;line-height:1.6}
+footer{text-align:center;padding:24px 7%;font-size:12px;color:var(--muted);background:#fffdf5}
+@media(max-width:600px){header{align-items:flex-start;flex-direction:column}nav{gap:14px}.hero{padding-top:58px}section{padding-top:48px;padding-bottom:48px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">Cherovia<small>Digital Studio</small></div>
+  <nav><a href="#services">Services</a><a href="#how">How it works</a><a href="#contact">Contact</a></nav>
+</header>
+<main>
+  <section class="hero">
+    <div class="eyebrow">Little things, lovingly made</div>
+    <h1>Make someone feel a little more loved.</h1>
+    <p>Personalised digital surprises for the people who matter — from birthday websites and sweet invitations to animated apology cards that help you say what’s in your heart.</p>
+    <a class="btn" href="#services">Explore our creations ↓</a>
+  </section>
+
+  <section id="services">
+    <div class="eyebrow">The Cherovia menu</div>
+    <h2 class="section-title">A little something for every feeling.</h2>
+    <p class="sub">Made to feel personal, look lovely, and share easily through a link or message.</p>
+    <div class="grid">
+      <article class="card"><div class="icon">🎂</div><h3>Birthday Surprise Websites</h3><p>Personalised pages with names, photos, heartfelt notes, cute animations, and little surprises.</p></article>
+      <article class="card"><div class="icon">💌</div><h3>Digital Wishes & Cards</h3><p>Custom birthday wishes and greeting cards made for your favourite people and special moments.</p></article>
+      <article class="card"><div class="icon">🎀</div><h3>Digital Invitations</h3><p>Pretty, personalised invitations for birthdays and celebrations, ready to send digitally.</p></article>
+      <article class="card"><div class="icon">🧸</div><h3>Animated Sorry Cards</h3><p>A thoughtful way to say “I’m sorry,” with a personal message, an animated reveal, and a gentle ending.</p></article>
+      <article class="card"><div class="icon">💗</div><h3>Couple Surprise Pages</h3><p>Little virtual gifts with memories, photos, letters, and thoughtful details made just for two.</p></article>
+    </div>
+  </section>
+
+  <section id="how" class="band steps">
+    <div class="eyebrow">Simple and personal</div>
+    <h2 class="section-title">How it works</h2>
+    <p class="sub">Your idea, turned into a little digital moment.</p>
+    <div class="grid">
+      <article class="card"><div class="icon">01</div><h3>Share your idea</h3><p>Tell us the occasion, the vibe, names, message, and any photos you’d like included.</p></article>
+      <article class="card"><div class="icon">02</div><h3>We personalise it</h3><p>Your design is made around your details. You can review the preview before the final delivery.</p></article>
+      <article class="card"><div class="icon">03</div><h3>Send the surprise</h3><p>Receive your digital card, invitation, or website to share with someone special.</p></article>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow">A little note</div>
+    <h2 class="section-title">Made for your person.</h2>
+    <p class="sub">Every Cherovia creation is customised for your occasion. Pricing depends on the type of design, features, and level of personalisation — message us for a quote.</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="eyebrow" style="color:var(--pink)">Let’s make something meaningful</div>
+    <h2 class="section-title">Have someone in mind?</h2>
+    <p class="sub">Message Cherovia with your occasion and the kind of surprise you’re imagining. We’ll help you choose what fits.</p>
+    <a class="btn" href="https://wa.me/919657188542?text=Hi%20Cherovia!%20I%27d%20love%20to%20ask%20about%20a%20personalised%20digital%20surprise." target="_blank" rel="noopener">Enquire on WhatsApp ↗</a>
+    <p class="note">Before publishing, replace the WhatsApp link with your business number. Use the international format with country code and no +, spaces, or dashes. Example format for India: 91XXXXXXXXXX.</p>
+  </section>
+</main>
+<footer>♡ Cherovia — Digital Studio · Little things, lovingly made.</footer>
+</body>
+</html>
